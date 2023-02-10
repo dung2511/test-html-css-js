@@ -152,6 +152,9 @@ p {
   display: flex;
   justify-content: space-between;
 }
+.slick-arrow {
+  display: none !important;
+}
 .section-3 {
   margin: 12px 300px 0;
   display: flex;
@@ -203,7 +206,7 @@ p {
 .sec_5_angle_left,
 .sec_5_angle_right {
   position: absolute;
-  width: 48px;
+  width: 48px !important;
   height: 48px;
   border-radius: 50%;
   background: #f5f6f8;
@@ -220,7 +223,10 @@ p {
   right: -10%;
 }
 .section-4_item {
-  width: 12%;
+  width: 12% !important;
+}
+.section-4 .slick-track {
+ max-width: 100% ;
 }
 .section-4-list {
   display: flex;
@@ -250,8 +256,12 @@ p {
   position: relative;
 }
 .section-5-item {
-  width: 16%;
+  width: 16% !important;
 }
+.section-5 .slick-track {
+  max-width: 100%;
+}
+
 .section-5-list {
   position: relative;
   width: 100%;
@@ -306,10 +316,6 @@ p {
   margin: 48px 300px 0;
   display: flex;
   justify-content: space-between;
-}
-.section-6 > div {
-  width: 24%;
-  height: 27rem;
 }
 .section-6_item img {
   width: 100%;
@@ -397,7 +403,6 @@ input[type="email"] {
   line-height: 1.5rem;
   font-family: Poppins-regular;
 }
-
 @media only screen and (max-width: 1024px) {
   main {
     max-width: 1024px;
@@ -511,6 +516,9 @@ input[type="email"] {
   .section-5 {
     margin: 12px;
     flex-wrap: wrap;
+  }
+  .section-5 .slick-track {
+    max-width: 1110px !important;
   }
   .sec_5_angle_left,
   .sec_5_angle_right {
