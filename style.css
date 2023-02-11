@@ -166,7 +166,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 33%;
+  width: 32% !important;
   background: #f5f6f8;
   border-radius: 5px;
 }
@@ -609,6 +609,12 @@ input[type="email"] {
   .section_item {
     width: 100%;
   }
+  .slider__item {
+    margin: 0;
+  }
+  .section_item {
+    width: 33% ;
+  }
   .text_1,
   .text_2 {
     margin: 16px;
@@ -674,6 +680,6 @@ input[type="email"] {
     background: #eb8426;
   }
   .section-5-name {
-    padding: 32px 3rem 20px;
+    padding: 32px 2rem 20px;
   }
 }
