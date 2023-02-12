@@ -74,7 +74,7 @@ $(document).ready(function () {
   });
   $(".slider_4").slick({
     arrows: false,
-    dots: false,
+    dots:true,
     infinite: false,
     initialSlide: 0,
     slidesToShow: 6,
@@ -83,7 +83,7 @@ $(document).ready(function () {
         breakpoint: 769,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           dots: true,
         },
       },
