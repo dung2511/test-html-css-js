@@ -50,9 +50,7 @@ $(document).ready(function () {
   });
   $(".slider_3").slick({
     arrows: false,
-    dots: false,
     infinite: false,
-    initialSlide: 0,
     slidesToShow: 8,
     responsive: [
       {
@@ -65,7 +63,7 @@ $(document).ready(function () {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 2,
           dots: true,
         },
@@ -74,7 +72,7 @@ $(document).ready(function () {
   });
   $(".slider_4").slick({
     arrows: false,
-    dots:true,
+    // dots: true,
     infinite: false,
     initialSlide: 0,
     slidesToShow: 6,
@@ -97,6 +95,39 @@ $(document).ready(function () {
       },
     ],
   });
+});
+$(".slider_5").slick({
+  arrows: false,
+  // dots: true,
+  infinite: false,
+  initialSlide: 0,
+  slidesToShow: 6,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 321,
+      settings: {
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+        dots: true,
+      },
+    },
+  ],
 });
 const hamburger = document.querySelector(".hamburger");
 const menuNav = document.querySelector(".nav_list_item");

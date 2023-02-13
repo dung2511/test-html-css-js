@@ -81,7 +81,10 @@ p {
 .frame {
   position: absolute;
   top: 12%;
-  left: 5%;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  justify-content: center;
 }
 .frame img {
   width: 200px;
@@ -443,7 +446,8 @@ input[type="email"] {
   }
   .section-2 .frame {
     top: 12%;
-    left: 7%;
+    left: 10%;
+    right: 10%;
   }
   .slider {
     max-width: 768px;
@@ -543,7 +547,8 @@ input[type="email"] {
   }
   .section-6 .frame {
     top: 12%;
-    left: 9%;
+    left: 10%;
+    right: 10%;
   }
   .section-6 .frame img {
     width: 188px;
@@ -605,6 +610,10 @@ input[type="email"] {
   .section-2 {
     margin: 16px;
   }
+  .section-2 .frame {
+    left: auto;
+    right: auto;
+  }
   .product_1,
   .section_item {
     width: 100%;
@@ -613,7 +622,7 @@ input[type="email"] {
     margin: 0;
   }
   .section_item {
-    width: 33% ;
+    width: 100% !important;
   }
   .text_1,
   .text_2 {
@@ -633,6 +642,13 @@ input[type="email"] {
   }
   .section-6_item {
     width: 100% !important;
+  }
+  .section-6 .section-6_item {
+    margin: 0 !important;
+  }
+  .section-6 .frame {
+    left: 25%;
+    right: 25%;
   }
   .section-8 {
     margin: 16px;
